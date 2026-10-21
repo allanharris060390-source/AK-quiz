@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English Form 1 Al Kindi: Word Warriors Challenge</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eaf3fb;--card:#fff;--ink:#14213d;--mute:#51607a;--line:#c9d8ea;--accent:#ffc93c;--accent-ink:#14213d;--ok:#1f8a5b;--okbg:#dcf4e8;--bad:#c93d3d;--badbg:#fbe1e1;--pas:#fff7da;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a2e;--card:#18253d;--ink:#f1f5fb;--mute:#a7b4c9;--line:#2c3d5a;--accent:#ffc93c;--accent-ink:#14213d;--ok:#5fd6a0;--okbg:#14382b;--bad:#ff8a8a;--badbg:#401c1c;--pas:#2a2f3a}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.5}
+main{max-width:640px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:20px;margin-bottom:14px}
+h1{font-size:28px;line-height:1.2;margin:0 0 8px;font-weight:800}
+h2{font-size:20px;margin:0 0 10px;font-weight:800}
+p{margin:0 0 12px}
+.mute{color:var(--mute);font-size:16px}
+input[type=text]{width:100%;font:inherit;padding:12px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);margin:6px 0 14px}
+select{width:100%;font:inherit;padding:12px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);margin:6px 0 14px}textarea{width:100%;font:inherit;font-size:16px;padding:10px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+.mini{padding:8px 14px;font-size:16px;margin:4px 6px 0 0}
+button{font:inherit;font-weight:800;cursor:pointer;border-radius:14px;border:2px solid var(--ink);color:var(--ink);background:var(--card);padding:12px 18px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent-ink);width:100%;font-size:19px;padding:14px}
+.top{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:16px;margin-bottom:8px}
+.timer{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:0 12px}.timer.low{background:var(--badbg);color:var(--bad);border-color:var(--bad)}
+.bar{height:12px;background:var(--line);border-radius:8px;overflow:hidden;margin-bottom:14px}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.tag{display:inline-block;padding:2px 12px;border-radius:20px;background:var(--accent);color:var(--accent-ink);font-size:15px;font-weight:800;margin-bottom:10px}
+.pas{background:var(--pas);border-left:6px solid var(--accent);border-radius:12px;padding:14px;margin-bottom:14px;font-size:17px;white-space:pre-line}
+.vis{text-align:center;background:var(--pas);border:2px dashed var(--line);border-radius:14px;padding:10px;margin-bottom:14px}
+.big2{font-size:44px;line-height:1.25}.cap{font-size:14px;color:var(--mute);font-weight:700}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;font-size:14px;font-weight:800}.cal div{border:2px solid var(--line);border-radius:8px;padding:6px 0;background:var(--card)}.cal .on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent-ink)}
+.tbl{height:10px;background:#a0693a;border-radius:4px;margin:0 20% 4px}
+.poster{background:#1d4ed8;color:#fff;border:4px solid var(--accent);text-align:center;font-weight:800;font-size:19px}
+.pas button{font-size:15px;padding:6px 12px;margin-top:6px}
+.q{font-size:21px;font-weight:800;line-height:1.35;margin-bottom:14px}
+.opt{display:block;width:100%;text-align:left;margin-bottom:10px;font-weight:700;padding:14px}
+.opt.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.opt.bad{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.fb{border-radius:12px;padding:12px;margin:6px 0 14px;font-weight:700;background:var(--pas)}
+.opt.sel{background:var(--accent);color:var(--accent-ink);border-color:var(--accent-ink)}
+.fb.ok{background:var(--okbg);color:var(--ok)}.fb.bad{background:var(--badbg);color:var(--bad)}
+.big{font-size:56px;font-weight:800;line-height:1}
+.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.rev{border-bottom:1px solid var(--line);padding:10px 0;font-size:16px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<section id="start" class="card">
+<h1>English Form 1 Al Kindi: Word Warriors Challenge</h1>
+<p class="mute">Form 1 · Grammar and Reading · Levels A1 and A2</p>
+<p>40 questions. You have <b>60 minutes</b>. Choose one answer for each question. Your score and report will show after you answer all the questions. You need <b>32 or more</b> to pass. If you get 31 or less, you must do the quiz again with new questions.</p>
+<label for="nm"><b>Your name</b></label>
+<select id="sel" hidden></select>
+<input id="nm" type="text" maxlength="40" placeholder="Type your name" autocomplete="off">
+<p id="ner" class="fb bad" hidden>Please choose or type your name first.</p>
+<button class="primary" id="go">Start the quiz</button>
+<button id="tbtn" hidden style="width:100%;margin-top:10px">Teacher dashboard</button>
+</section>
+
+<section id="quiz" hidden>
+<div class="top"><span id="sec"></span><span id="tm" class="timer" aria-label="Time left">60:00</span><span id="cnt"></span></div>
+<div class="bar"><i id="pb"></i></div>
+<div class="card">
+<div id="vis" hidden></div>
+<div id="pas" class="pas" hidden></div>
+<div class="q" id="q"></div>
+<div id="opts"></div>
+<div id="fb" class="fb" hidden></div>
+<button class="primary" id="next" hidden>Next question</button>
+</div>
+</section>
+
+<section id="tch" hidden>
+<div class="card"><h2>Teacher dashboard</h2><p id="sum" class="mute"></p>
+<button id="rf" class="mini">Refresh</button><button id="csv" class="mini">Download CSV</button><button id="bk" class="mini">Back</button></div>
+<div class="card"><h2>Students</h2><p class="mute">Tap a name to see every attempt.</p><div id="list"></div></div>
+<div class="card"><h2>Class list</h2><p class="mute">One name per line. Students choose their name from this list, so you can see who has not started.</p><textarea id="ros" rows="8"></textarea><button id="sr" class="primary" style="margin-top:10px">Save class list</button><p id="rm" class="mute"></p></div>
+</section>
+<section id="end" hidden>
+<div class="card" style="text-align:center">
+<p id="who" class="mute"></p>
+<div class="big" id="score"></div>
+<h2 id="msg" style="margin-top:12px"></h2>
+<div id="pf" class="fb"></div>
+<p id="sv" class="mute"></p>
+<p id="rc" class="rev"></p><button id="cp" class="mini">Copy my result</button>
+</div>
+<div class="card"><h2>Your results</h2><div id="split"></div></div>
+<div class="card"><h2>Check your mistakes</h2><div id="rev"></div></div>
+<button class="primary" id="again" hidden>Redo the quiz with new questions</button>
+</section>
+</main>
+<script>
+// Each item: [question, correct answer, wrong1, wrong2, explanation]. Options are shuffled on screen.
+var G=[
+["She ___ a student.","is","am","are","With she, we use is."],
+["I ___ from Malaysia.","am","is","are","With I, we use am."],
+["They ___ my friends.","are","is","am","With they, we use are."],
+["There ___ a book on the table.","is","are","am","One book: there is."],
+["He ___ breakfast at seven o’clock.","has","have","having","With he, we use has."],
+["___ you like pizza?","Do","Does","Are","With you, we use do in questions."],
+["She ___ like fish.","doesn’t","don’t","isn’t","With she, we use doesn’t."],
+["This is ___ apple.","an","a","the","Use an before a, e, i, o, u sounds."],
+["I get up ___ six o’clock.","at","on","in","Use at with clock times."],
+["We play football ___ Monday.","on","at","in","Use on with days."],
+["These are ___ books. (They belong to me.)","my","I","me","My shows that something belongs to me."],
+["___ is your name?","What","Where","Who","We ask What to get a name."],
+["My brother is ___ than me.","taller","tall","tallest","Use taller to compare two people."],
+["Look! The children ___ football now.","are playing","play","played","Now = are + verb with -ing."],
+["Yesterday I ___ to school by bus.","went","go","goes","Yesterday is past. The past of go is went."],
+["Three ___ are in the park.","children","childs","child","The plural of child is children."],
+["Can you ___ English?","speak","speaks","speaking","After can, use the base verb."],
+["He is ___ at Maths.","good","well","goodly","Use good after is."],
+["___ many pencils do you have?","How","What","Who","How many asks about a number."],
+["I ___ a cat and two fish.","have","has","am","With I, we use have."]
+];
+var P=[
+{t:"Hi! My name is Mia. I am 13 years old. I live in Ipoh with my mum, dad and little brother. My brother is six. I like dogs. I have a small white dog called Snow. After school, I do my homework and play with Snow. On Saturday, I go to the park.",
+ q:[["How old is Mia?","13 years old","6 years old","12 years old"],["Where does Mia live?","In Ipoh","In the park","In school"],["What is Snow?","A dog","A cat","A brother"],["Who is six years old?","Mia’s brother","Mia","Mia’s dad"],["When does Mia go to the park?","On Saturday","After school","On Sunday"]]},
+{t:"SCHOOL LIBRARY\nOpen: Monday to Friday, 8:00 am to 4:00 pm\nClosed: Saturday and Sunday\nYou can borrow 2 books for 7 days.\nNo food or drink, please.\nBe quiet.",
+ q:[["What time does the library open?","8:00 am","4:00 pm","7:00 am"],["Can you go to the library on Sunday?","No, it is closed","Yes, at 8:00 am","Yes, at 4:00 pm"],["How many books can you borrow?","2 books","7 books","1 book"],["What can’t you do in the library?","Eat or drink","Read a book","Borrow a book"],["How many days can you keep a book?","7 days","2 days","5 days"]]},
+{t:"Ben gets up late on Saturday, at nine o’clock. He eats rice and eggs for breakfast. Then he helps his dad wash the car. In the afternoon, he meets his friends at the shopping mall. They watch a film and eat ice cream. Ben goes home at six. He is tired, so he goes to bed early.",
+ q:[["What time does Ben get up on Saturday?","At nine o’clock","At six o’clock","At seven o’clock"],["Who helps wash the car?","Ben helps his dad","Ben’s friends","Ben’s mum"],["Where does Ben meet his friends?","At the shopping mall","At school","At home"],["What do the friends eat?","Ice cream","Rice and eggs","Pizza"],["Why does Ben go to bed early?","He is tired","He is hungry","He is sick"]]},
+{t:"Hi Sara,\nThank you for your invitation. I can’t come to your party on Friday because I have a dentist appointment at 5 o’clock. Sorry! But I can come on Saturday. Let’s go to the cinema together. Do you want to see a comedy or a horror film?\nWrite soon.\nLina",
+ q:[["Why can’t Lina come on Friday?","She has a dentist appointment","She is tired","She has a party"],["Who is the message to?","Sara","Lina","The dentist"],["When can Lina meet Sara?","On Saturday","On Friday","On Sunday"],["Where do they go together?","To the cinema","To a party","To the dentist"],["What does Lina ask Sara?","Comedy or horror film?","What time is it?","Where is the party?"]]}
+];
+var GB=[
+["My mother ___ a teacher.","is","am","are","With mother (she), we use is."],
+["We ___ in Form 1.","are","is","am","With we, we use are."],
+["I ___ not hungry.","am","is","are","With I, we use am."],
+["___ she have a bike?","Does","Do","Is","With she, we use does in questions."],
+["They ___ play tennis on Fridays.","don’t","doesn’t","isn’t","With they, we use don’t."],
+["She ___ up at six every day.","gets","get","getting","With she, add -s to the verb."],
+["My cat is ___ the chair.","under","at","for","Under shows the place."],
+["Ali has ___ orange.","an","a","two","Use an before a vowel sound."],
+["___ are you from?","Where","What","Who","We ask Where about a place."],
+["My birthday is ___ June.","in","on","at","Use in with months."],
+["That is Sara’s bag. It is ___ bag.","her","she","hers","Her shows that it belongs to a girl."],
+["There ___ three chairs in the room.","are","is","am","Three chairs: there are."],
+["For me, football is ___ than chess.","more exciting","exciting","most exciting","Use more + a long adjective to compare."],
+["Listen! Someone ___ at the door.","is knocking","knocks","knocked","Listen! = now. Use is + verb with -ing."],
+["Last week we ___ a film.","watched","watch","watching","Last week is past. Add -ed."],
+["Two ___ are on the plate.","sandwiches","sandwichs","sandwich","Add -es after -ch."],
+["I ___ swim, but I can run fast.","can’t","can","cans","But shows a difference, so use can’t."],
+["She sings ___.","beautifully","beautiful","beauty","Use an adverb after a verb."],
+["___ money do you have?","How much","How many","How old","Money cannot be counted, so use How much."],
+["Don’t ___ late for school.","be","is","being","After don’t, use the base verb."]
+];
+var PB=[
+{t:"My name is Raj. I am a student in Form 1. My school is big. There are 30 students in my class. My favourite subject is Science. I like my teacher, Mr Lim. He is kind and funny. At school, I eat lunch with my friends. We eat noodles and drink tea.",
+ q:[["Which form is Raj in?","Form 1","Form 2","Form 3"],["How many students are in his class?","30 students","13 students","20 students"],["What is Raj’s favourite subject?","Science","Maths","English"],["What is Mr Lim like?","Kind and funny","Strict and tall","Quiet and old"],["What do the friends drink at lunch?","Tea","Milk","Juice"]]},
+{t:"SCHOOL SPORTS DAY\nDate: Friday, 14 November\nTime: 9:00 am to 1:00 pm\nPlace: School field\nWear your sports shirt and bring a bottle of water.\nParents are welcome.",
+ q:[["What is the event?","Sports Day","Book Day","A class trip"],["Which day is it?","Friday","Saturday","Monday"],["What time does it finish?","1:00 pm","9:00 am","5:00 pm"],["Where is it?","On the school field","In the library","In the hall"],["What must students bring?","A bottle of water","A book","Money"]]},
+{t:"Last Sunday, Aisha visited her grandmother in the village. They went to the river and fed the ducks. Then they made curry puffs in the kitchen. Aisha’s grandmother told her a story about her school days. It was a lovely day. Aisha took many photos and went home by bus at five o’clock.",
+ q:[["Who did Aisha visit?","Her grandmother","Her teacher","Her friend"],["What did they do at the river?","They fed the ducks","They swam","They fished"],["What did they make in the kitchen?","Curry puffs","Cake","Noodles"],["How did Aisha go home?","By bus","By car","By train"],["What did Aisha take?","Photos","Flowers","Food"]]},
+{t:"Hi Daniel,\nI’m at the bus station now. The bus is late, so I will arrive at 3:30, not 3:00. Please wait for me in front of the library. I’m wearing a blue jacket and a red cap. Don’t worry! See you soon.\nHaziq",
+ q:[["Where is Haziq now?","At the bus station","At the library","At home"],["What time will Haziq arrive?","3:30","3:00","4:30"],["Where should Daniel wait?","In front of the library","At the bus station","At the cinema"],["What is Haziq wearing?","A blue jacket and a red cap","A red jacket and a blue cap","A white shirt"],["Why is Haziq late?","The bus is late","He is sick","He is at school"]]}
+];
+function em(s,c){return `<div class='vis'><div class='big2'>${s}</div>${c?`<div class='cap'>${c}</div>`:''}</div>`}
+function tb(s){return `<div class='vis'><div class='big2'>${s}</div><div class='tbl'></div><div class='cap'>On the table</div></div>`}
+function clock(h){var a=h%12*Math.PI/6,t='';for(var n=0;n<12;n++){var b=n*Math.PI/6;t+=`<line x1='${50+40*Math.sin(b)}' y1='${50-40*Math.cos(b)}' x2='${50+46*Math.sin(b)}' y2='${50-46*Math.cos(b)}' stroke='currentColor' stroke-width='3'/>`}return `<div class='vis'><svg viewBox='0 0 100 100' width='130' height='130' style='color:var(--ink)'><circle cx='50' cy='50' r='48' fill='var(--card)' stroke='currentColor' stroke-width='3'/>${t}<line x1='50' y1='50' x2='${50+22*Math.sin(a)}' y2='${50-22*Math.cos(a)}' stroke='currentColor' stroke-width='5' stroke-linecap='round'/><line x1='50' y1='50' x2='50' y2='14' stroke='currentColor' stroke-width='3' stroke-linecap='round'/></svg><div class='cap'>Look at the clock</div></div>`}
+function cal(d){var D=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];return `<div class='vis'><div class='cal'>${D.map(function(x,k){return `<div${k===d?" class='on'":''}>${x}${k===d?'<br>⚽':''}</div>`}).join('')}</div><div class='cap'>This week</div></div>`}
+var VA={3:tb('📖'),5:em('🍕❓'),6:em('👧🐟🚫','She says: No, thank you!'),7:em('🍎'),8:clock(6),9:cal(0),12:em(`<span style='font-size:70px'>🧍</span><span style='font-size:42px'>🧍</span>`,'My big brother and me'),13:em('🧒⚽🧒','Look! It is happening now!'),15:em('🧒🧒🧒🌳','In the park'),17:em('🧮 100% ⭐','Maths test'),18:em('✏️✏️✏️✏️✏️✏️','Count the pencils'),19:em('🐱🐟🐟','My pets')};
+var PVA=[em('👧🐶🏠','Mia and her dog'),em('📚🤫','Library'),em('🛏️ → 🍳 → 🚗 → 🛍️ → 🎬 → 🌙','Ben’s Saturday'),em('✉️📩','A message for Sara')];
+var VB={0:em('👩‍🏫📚','My mother'),3:em('👧🚲❓'),5:clock(6),6:em('🪑<br>🐱','Where is the cat?'),7:em('🍊'),9:em('📅🎂','June party!'),10:em('👧🎒','Sara’s bag'),11:em('🪑🪑🪑'),13:em('🚪🔔👤','Knock, knock!'),15:em('🥪🥪🍽️'),16:em('🏊❌ 🏃✅','My skills'),17:em('🎤👧🎶'),18:em('💵💵💰❓','Shopping')};
+var PVB=[em('🏫👦🔬','Raj’s school'),em('🏃‍♂️🏅🏆','Sports Day'),em('🌳🦆🥟👵','Aisha’s Sunday'),em('🚌📍⏰','At the bus station')];
+var SETS_=[[G,P,VA,PVA],[GB,PB,VB,PVB]];
+var Q=[];function build(G,P,V,PV){Q=[];
+G.forEach(function(g){Q.push({s:"Grammar",q:g[0],a:g[1],w:[g[2],g[3]],e:g[4]})});
+P.forEach(function(p,i){p.q.forEach(function(x){Q.push({s:"Reading",p:p.t,q:x[0],a:x[1],w:[x[2],x[3]],e:"Look again at the text to check."})})});for(var k in V)Q[+k].v=V[k];for(k=20;k<40;k++){var pi=Math.floor((k-20)/5);Q[k].v=PV[pi];Q[k].pc=pi===1?" poster":""}}
+
+var $=function(i){return document.getElementById(i)};
+var i=0,score={Grammar:0,Reading:0},miss=[],done=false;
+function shuf(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t}return a}
+function show(id){["start","quiz","end","tch"].forEach(function(s){$(s).hidden=s!==id});window.scrollTo(0,0)}
+function speak(t){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang="en-GB";u.rate=.85;speechSynthesis.speak(u)}catch(e){}}
+function render(){
+ var c=Q[i];done=false;
+ $("sec").textContent=c.s==="Grammar"?"Grammar":"Reading";
+ $("cnt").textContent="Question "+(i+1)+" of "+Q.length;
+ $("pb").style.width=(i/Q.length*100)+"%";
+ var pe=$("pas");pe.className="pas"+(c.pc||"");var ve=$("vis");if(c.v){ve.hidden=false;ve.innerHTML=c.v}else ve.hidden=true;
+ if(c.p){pe.hidden=false;pe.textContent=c.p;var b=document.createElement("button");b.type="button";b.textContent="Listen";b.onclick=function(){speak(c.p)};pe.appendChild(document.createElement("br"));pe.appendChild(b)}else pe.hidden=true;
+ $("q").textContent=c.q;
+ var o=$("opts");o.innerHTML="";
+ shuf([c.a].concat(c.w)).forEach(function(t){
+  var b=document.createElement("button");b.type="button";b.className="opt";b.textContent=t;
+  b.onclick=function(){pick(b,t)};o.appendChild(b)});
+ $("fb").hidden=true;$("next").hidden=true;
+}
+function pick(btn,t){
+ if(done)return;done=true;var c=Q[i],right=t===c.a;
+ Array.prototype.forEach.call($("opts").children,function(b){b.disabled=true});
+ if(right)score[c.s]++;else miss.push({n:i+1,q:c.q,a:c.a,y:t,e:c.e});btn.classList.add("sel");
+ var f=$("fb");f.hidden=false;f.className="fb";
+ f.textContent="Answer saved. Your report will show at the end.";
+ var n=$("next");n.hidden=false;n.textContent=i===Q.length-1?"See my score":"Next question";n.focus();
+}
+function finish(timeUp){clearInterval(tid);for(var k=done?i+1:i;timeUp&&k<Q.length;k++)miss.push({n:k+1,q:Q[k].q,a:Q[k].a,y:"No answer",e:""});
+ var tot=score.Grammar+score.Reading,nm=getName();
+ $("who").textContent=(nm?nm+" · ":"")+new Date().toLocaleDateString("en-GB")+" · Time used: "+fmt(3600-Math.max(left,0));
+ $("score").textContent=tot+" / "+Q.length;
+ $("msg").textContent=(timeUp?"Time is up! ":"")+(tot>=34?"Excellent! You are doing great.":tot>=24?"Good job! Keep practising.":tot>=16?"Nice try. Read the answers below and try again.":"Keep going! Practise a little every day.");
+ $("split").innerHTML="";
+ [["Grammar",20],["Reading",20]].forEach(function(r){var d=document.createElement("div");d.className="row";d.innerHTML="<span>"+r[0]+"</span><b>"+score[r[0]]+" / "+r[1]+"</b>";$("split").appendChild(d)});
+ var rv=$("rev");rv.innerHTML="";
+ if(!miss.length)rv.textContent="No mistakes. Perfect score!";
+ miss.forEach(function(m){var d=document.createElement("div");d.className="rev";
+  var b=document.createElement("b");b.textContent=m.n+". "+m.q;d.appendChild(b);
+  var x=document.createElement("div");x.textContent="Your answer: "+m.y;x.style.color="var(--bad)";d.appendChild(x);
+  var y=document.createElement("div");y.textContent="Correct answer: "+m.a;y.style.color="var(--ok)";d.appendChild(y);rv.appendChild(d)});
+ var ok=tot>=32;$("pf").className="fb "+(ok?"ok":"bad");$("pf").textContent=ok?"You passed! (32 or more)":"You need 32 or more to pass. Please redo the quiz. You will get new questions.";$("again").hidden=ok;save(tot,ok,timeUp);show("end");
+}
+var tid=null,left=3600;
+function fmt(s){var m=Math.floor(s/60),r=s%60;return (m<10?"0":"")+m+":"+(r<10?"0":"")+r}
+function tick(){left--;$("tm").textContent=fmt(Math.max(left,0));if(left<=300)$("tm").classList.add("low");if(left<=0)finish(true)}
+var att=0;try{att=+localStorage.getItem("q_att")||0}catch(e){}
+function begin(){if(!getName()){$('ner').hidden=false;show('start');return}$('ner').hidden=true;var s=SETS_[att%2],setNo=att%2;att++;startRec(setNo);try{localStorage.setItem("q_att",att)}catch(e){}build(s[0],s[1],s[2],s[3]);i=0;score={Grammar:0,Reading:0};miss=[];left=3600;$("tm").textContent=fmt(left);$("tm").classList.remove("low");clearInterval(tid);tid=setInterval(tick,1000);show("quiz");render()}
+$("go").onclick=begin;
+$("next").onclick=function(){if(i===Q.length-1)finish();else{i++;render();window.scrollTo(0,0)}};
+$("again").onclick=begin;
+var db=null,uid=null,curDoc=null,prog=[],rows=[],roster=[];
+function getName(){return $('sel').hidden?$('nm').value.trim():$('sel').value}
+function startRec(setNo){curDoc=null;if(!db)return;try{curDoc=db.collection('attempts').doc();curDoc.set({name:getName(),uid:uid||'',set:setNo,n:att,status:'started',t0:Date.now()}).catch(function(){})}catch(e){}}
+function save(tot,ok,tu){var pv=prog.length?prog[prog.length-1]:null;prog.push(tot);$('rc').textContent=getName()+' · Set '+((att-1)%2===0?'A':'B')+' · '+tot+'/40 (Grammar '+score.Grammar+', Reading '+score.Reading+') · '+(ok?'Passed':'Redo needed')+' · '+new Date().toLocaleDateString('en-GB');
+ if(pv!==null)$('pf').textContent+=' Last attempt: '+pv+'. This attempt: '+tot+' ('+(tot>=pv?'+':'')+(tot-pv)+').';
+ var sv=$('sv');if(!db||!curDoc){sv.textContent='Your result is not saved online. Take a screenshot or tap Copy my result, and send it to your teacher.';return}
+ sv.textContent='Saving...';
+ curDoc.update({status:'completed',g:score.Grammar,r:score.Reading,total:tot,pass:ok,used:3600-Math.max(left,0),timeUp:!!tu,miss:miss.map(function(m){return m.n}),t1:Date.now()}).then(function(){sv.textContent='Saved. Your teacher can see your result.'}).catch(function(){sv.textContent='Your result is not saved online. Take a screenshot or tap Copy my result, and send it to your teacher.'});
+ if(uid)db.doc('data/users/'+uid+'/progress').set({scores:prog}).catch(function(){})}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function key(n){return String(n).toLowerCase().replace(/\s+/g,' ').trim()}
+function dt(t){return t?new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short'}):''}
+function stu(n,at,onR){at.sort(function(a,b){return a.t0-b.t0});var done=at.filter(function(a){return a.status==='completed'}),sc=done.map(function(a){return a.total}),last=at[at.length-1],st;
+ if(!at.length)st='Not started';else if(done.some(function(a){return a.pass}))st='Passed';else if(last.status!=='completed')st='Started, not finished';else st='Needs redo';
+ return{name:n,at:at,sc:sc,st:st,gain:sc.length>1?sc[sc.length-1]-sc[0]:null,last:last?last.t0:0,onR:onR}}
+function drawDash(){
+ var c={'Passed':0,'Needs redo':0,'Started, not finished':0,'Not started':0};rows.forEach(function(r){c[r.st]++});
+ $('sum').textContent='Passed: '+c['Passed']+' · Needs redo: '+c['Needs redo']+' · Started, not finished: '+c['Started, not finished']+' · Not started: '+c['Not started'];
+ var order={'Not started':0,'Started, not finished':1,'Needs redo':2,'Passed':3},cls={'Passed':' ok','Not started':' bad'},L=$('list');L.innerHTML='';
+ if(!rows.length)L.textContent='No students yet. Add a class list below.';
+ rows.slice().sort(function(a,b){return order[a.st]-order[b.st]||a.name.localeCompare(b.name)}).forEach(function(r){
+  var row=el('div','rev'),b=el('button','opt'+(cls[r.st]||''),r.name+(roster.length&&!r.onR?' (not on class list)':'')+' · '+r.st);b.type='button';
+  var s=el('div','mute',r.at.length?'Attempts: '+r.at.length+' · Scores: '+(r.sc.join(' → ')||'none yet')+(r.gain!==null?' · Change: '+(r.gain>=0?'+':'')+r.gain:'')+' · Last: '+dt(r.last):'No attempts yet');
+  var d=el('div','mute');d.hidden=true;
+  r.at.forEach(function(a,k){d.appendChild(el('div','',(k+1)+'. '+dt(a.t0)+' · Set '+(a.set===1?'B':'A')+' · '+(a.status==='completed'?a.total+'/40 (Grammar '+a.g+', Reading '+a.r+') · '+fmt(a.used)+(a.timeUp?' · time up':'')+(a.miss&&a.miss.length?' · Missed: '+a.miss.join(', '):''):'Started, not finished')))});
+  b.onclick=function(){d.hidden=!d.hidden};row.appendChild(b);row.appendChild(s);row.appendChild(d);L.appendChild(row)})}
+async function loadDash(){
+ $('list').textContent='Loading...';
+ try{var snap=await db.collection('attempts').get(),m={};
+  snap.docs.forEach(function(d){var a=d.data(),k=key(a.name||'?');(m[k]=m[k]||{name:a.name||'?',at:[]}).at.push(a)});
+  var rs=await db.doc('config/roster').get();roster=rs.exists?(rs.data().names||[]):[];$('ros').value=roster.join('\n');
+  var out=[],seen={};roster.forEach(function(n){var k=key(n);seen[k]=1;out.push(stu(n,(m[k]||{at:[]}).at,true))});
+  Object.keys(m).forEach(function(k){if(!seen[k])out.push(stu(m[k].name,m[k].at,false))});rows=out;drawDash()
+ }catch(e){$('list').textContent='Could not load results. Make sure you are signed in as the owner.'}}
+$('tbtn').onclick=function(){show('tch');loadDash()};$('rf').onclick=loadDash;$('bk').onclick=function(){show('start')};$('cp').onclick=function(){try{navigator.clipboard.writeText($('rc').textContent);$('cp').textContent='Copied!'}catch(e){}};
+$('sr').onclick=async function(){var n=$('ros').value.split('\n').map(function(x){return x.trim()}).filter(Boolean);try{await db.doc('config/roster').set({names:n});$('rm').textContent='Saved '+n.length+' names.';loadDash()}catch(e){$('rm').textContent='Could not save.'}};
+$('csv').onclick=async function(){try{var dl=await window.claude.use('downloads');if(!dl)return;var q=function(x){return '"'+String(x==null?'':x).replace(/"/g,'""')+'"'},v=function(x){return x==null?'':x},ln=['Name,Attempt,Set,Status,Grammar,Reading,Total,Passed,Seconds used,Date'];
+ rows.forEach(function(r){if(!r.at.length)ln.push([q(r.name),0,'','Not started'].join(','));r.at.forEach(function(a,k){ln.push([q(r.name),k+1,a.set===1?'B':'A',a.status,v(a.g),v(a.r),v(a.total),v(a.pass),v(a.used),q(new Date(a.t0).toLocaleString('en-GB'))].join(','))})});
+ await dl.save({filename:'quiz-results.csv',data:ln.join('\n')})}catch(e){}};
+(async function(){try{var c=window.claude;if(!c)return;var u=await c.use('user');if(u){uid=await u.id();if(await u.canEdit())$('tbtn').hidden=false}
+ db=await c.use('db');if(!db)return;
+ var rs=await db.doc('config/roster').get();if(rs.exists&&(rs.data().names||[]).length){var s=$('sel');s.innerHTML='<option value="">Choose your name</option>';rs.data().names.forEach(function(n){var o=document.createElement('option');o.textContent=n;o.value=n;s.appendChild(o)});s.hidden=false;$('nm').hidden=true}
+ if(uid){var ps=await db.doc('data/users/'+uid+'/progress').get();if(ps.exists){prog=ps.data().scores||[];att=Math.max(att,prog.length)}}
+}catch(e){}})();
+</script>
+</body>
+</html>
